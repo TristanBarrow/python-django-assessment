@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "regen": "npm run build && python3 manage.py runserver",
-    "start": "python3 manage.py runserver",
+    "start": "npm install && npm run build && python3 manage.py runserver",
     "test": "python3 manage.py test",
     "watch": "webpack --watch --mode development"
   },
