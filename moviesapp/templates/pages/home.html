@@ -1,11 +1,39 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rotting Tomatoes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 100;
+    }
+      
+    html {
+      font-size: 62.5%;
+      background-color: #414141;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background-color: #414141;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
   <div id='app'></div>
+    <script src="{% static 'js/bundle.js' %}"></script>
 </body>
 </html>
